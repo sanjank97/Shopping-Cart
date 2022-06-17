@@ -125,7 +125,7 @@
                         { ?>
                      <div class="row">
                         <div class="col-xl-6 text-center">
-                             <img src="{{url('/upload/',$product->photo)}}" width="100px;">
+                             <img src="{{url('public/upload/',$product->photo)}}" width="100px;">
                           </div>
                           <div class="col-xl-6">
                               <h3>{{$product->name}}</h3>

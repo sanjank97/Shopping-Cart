@@ -29,7 +29,7 @@ Route::get('cartData/{user}','ProductController@cartData');
 Route::get('cart/{user}','ProductController@displayCartData');
 Route::get('refresh','ProductController@quantityUpdate');
 Route::get('delete/{product_id}','ProductController@quantitydelete');
-Route::get('payment/{lodin_id}', 'StripeController@handleGet');
+Route::get('payment/{login_id}', 'StripeController@handleGet');
 Route::post('payment', 'StripeController@handlePost')->name('product.payment');
 Route::get('payment', function(){
     return redirect('home')->with('msg','payment successfull plz check your Myorder List and Mail');

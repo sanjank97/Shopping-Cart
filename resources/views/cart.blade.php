@@ -106,7 +106,7 @@
                                 $photo=$row['product_photo'];
                                 ?>
                                 <tr>
-                                    <td><img src="{{url('upload/',$photo)}}" width="30px"><?php echo $row['product_name'] ?></td>
+                                    <td><img src="{{url('public/upload/',$photo)}}" width="30px"><?php echo $row['product_name'] ?></td>
 
                                     <td><?php echo '<strong>$</strong> '.$row['product_price'];?></td>
                                     <form action="{{url('refresh')}}">
